@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportWay - 场馆对比</title>
+    <link rel="stylesheet" href="CSS/comparison.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">SportWay</div>
+
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="venues.html">场馆查询</a>
+        <a href="comparison.html" class="active">场馆对比</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>体育场馆对比</h1>
+    <p>比较不同场馆的条件，找到最适合你的运动空间</p>
+</section>
+
+<main class="container">
+
+    <div class="page-heading">
+        <div>
+            <h2>场馆信息比较</h2>
+            <p>以下是你选择的体育场馆</p>
+        </div>
+
+        <button class="back-btn" onclick="goBack()">
+            + 添加场馆
+        </button>
+    </div>
+
+    <div id="comparisonContent"></div>
+
+    <div class="bottom-actions">
+        <button class="secondary-btn" onclick="clearComparison()">
+            清空对比
+        </button>
+
+        <button class="primary-btn" onclick="goBack()">
+            返回场馆查询
+        </button>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 SportWay | Sports Venue Navigation Platform</p>
+</footer>
+
+<script src="js/comparison.js"></script>
+
+</body>
+</html>

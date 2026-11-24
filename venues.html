@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportWay - 场馆查询</title>
+    <link rel="stylesheet" href="CSS/venues.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">SportWay</div>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="venues.html" class="active">场馆查询</a>
+        <a href="comparison.html">场馆对比</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>寻找适合你的运动场馆</h1>
+    <p>搜索、筛选并比较附近的体育场馆</p>
+</section>
+
+<main class="container">
+
+    <section class="search-box">
+        <input type="text" id="searchInput"
+               placeholder="请输入场馆名称或地点">
+
+        <select id="typeFilter">
+            <option value="all">全部运动类型</option>
+            <option value="羽毛球">羽毛球</option>
+            <option value="篮球">篮球</option>
+            <option value="游泳">游泳</option>
+            <option value="健身">健身</option>
+        </select>
+
+        <select id="priceFilter">
+            <option value="all">全部价格</option>
+            <option value="low">30元以下</option>
+            <option value="medium">30-60元</option>
+            <option value="high">60元以上</option>
+        </select>
+
+        <button id="searchButton">搜索</button>
+    </section>
+
+    <div class="result-header">
+        <h2>推荐运动场馆</h2>
+        <span id="resultCount">0个场馆</span>
+    </div>
+
+    <div id="venueList" class="venue-list"></div>
+
+    <div class="compare-bar">
+        <span id="compareCount">已选择0个场馆</span>
+        <button onclick="goToComparison()">开始对比</button>
+    </div>
+
+</main>
+
+<script src="js/venues.js"></script>
+
+</body>
+</html>
